@@ -1,0 +1,36 @@
+.about {
+  padding: 20px 200px;
+  height: 80vh;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 54px;
+  list-style: none;
+  & li {
+    margin-bottom: 54px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & a {
+      font-size: 20px;
+      letter-spacing: 4px;
+      transition: 0.4s;
+      padding: 10px 20px;
+      @media (any-hover: hover) {
+        &:hover {
+          transition: 0.2s;
+          color: #00b71b;
+        }
+      }
+    }
+  }
+}
+
+.subitem {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 54px;
+}
